@@ -5,10 +5,10 @@ const morgan = require('morgan');
 
 const app = express();
 
-// Allowed origins for CORS
 const allowedOrigins = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
+    'https://schedora.vercel.app', // Deployed Frontend
     process.env.CLIENT_URL, // Set this in .env for production
 ].filter(Boolean);
 
